@@ -2,7 +2,7 @@
   "name": "carzar-front",
   "version": "0.0.0",
   "dependencies": {
-    "angular-animate": "~1.5.3",
+    "angular-animate": "^1.6.4",
     "angular-cookies": "~1.5.3",
     "angular-touch": "~1.5.3",
     "angular-sanitize": "~1.5.3",
