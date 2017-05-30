@@ -1,0 +1,79 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+//$icon-font-path: "../../bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+.block-content {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.block-header {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  button {
+    font-size: 12px;
+  }
+}
+
+.block-product {
+  position: relative;
+  &__bg {
+    img {
+      width: 100%;
+      height: 720px;
+    }
+  }
+  .test {
+    // widows: 500px;
+    // height: 850px;
+  //   background-image: url('../../app/shared/styles/test.png');
+    // background: url("http://localhost:3000/app/shared/styles/ol1.png") no-repeat;
+    // background-position: center;
+    // background: url("http://localhost:3000/app/shared/styles/test2.png") no-repeat;
+  }
+  &__ads {
+    position: absolute;
+    top: 60px;
+  }
+}
+
+.next-line-ads {
+  margin-top: 5px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
