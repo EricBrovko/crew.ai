@@ -11,7 +11,6 @@ $navbar-inverse-link-color: #5AADBB;
  */
 // bower:scss
 // endbower
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -27,49 +26,112 @@ $navbar-inverse-link-color: #5AADBB;
   }
 }
 
-.block-content {
+
+@font-face {
+  font-family: Roboto;
+  src: url('./shared/styles/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.main-page {
+  font-family: Roboto;
+  .block-header {
+    // font-family: Roboto;
+    padding: 20px;
+    button {
+      font-size: 12px;
+    }
+  }
+
+  .block-product {
+    position: relative;
+    background-color: #F9FAFE;
+    &__bg {
+      height: 700px;
+      background-size: cover;
+      background-image: url("./shared/styles/images/main-product.png");
+      button {
+        margin-top: 65px;
+      }
+    }
+    &__bg-footer {
+      height: 400px;
+      background-size: cover;
+      background-image: url("./shared/styles/images/product-footer.jpg");
+      h3:first-child {
+        padding-top: 60px;
+      }
+      button {
+        margin-top: 65px;
+      }
+    }
+    &__ads {
+      margin-top: 50px;
+    }
+  }
+
+  .section-features {
+    background-color: #F9FAFE;
+    h3:nth-child(2) {
+      margin-bottom: 50px;
+    }
+    &__col {
+      img {
+        width: 30%;
+        height: 135px;
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .section-about {
+    background-color: #F9FAFE;
+    position: relative;
+    height: 685px;
+    background-size: cover;
+    background-image: url("./shared/styles/images/about.png");
+    h3, h4 {
+      padding-left: 185px;
+    }
+  }
+
+  .section-price {
+    background-color: #F9FAFE;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .setion-integration {
+    background-color: #F9FAFE;
+    padding-top: 30px;
+    &__col {
+      img {
+        width: 30%;
+      }
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.row-block {
   margin-left: 0;
   margin-right: 0;
 }
 
-.block-header {
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
-  button {
-    font-size: 12px;
-  }
-}
-
-.block-product {
-  position: relative;
-  &__bg {
-    img {
-      width: 100%;
-      height: 720px;
-    }
-  }
-  .test {
-    // widows: 500px;
-    // height: 850px;
-  //   background-image: url('../../app/shared/styles/test.png');
-    // background: url("http://localhost:3000/app/shared/styles/ol1.png") no-repeat;
-    // background-position: center;
-    // background: url("http://localhost:3000/app/shared/styles/test2.png") no-repeat;
-  }
-  &__ads {
-    position: absolute;
-    top: 60px;
-  }
+.next-row {
+  margin-top: 50px;
 }
 
 .next-line-ads {
   margin-top: 5px;
 }
-
-.m-t-5 {
-  margin-top: 5px;
-}
-
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
