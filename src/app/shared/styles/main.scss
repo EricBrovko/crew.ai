@@ -26,47 +26,56 @@ $navbar-inverse-link-color: #5AADBB;
   }
 }
 
-
 @font-face {
   font-family: Roboto;
   src: url('./shared/styles/fonts/Roboto-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-.main-page {
+
+.main-wrapper {
   font-family: Roboto;
-  .block-header {
-    // font-family: Roboto;
+  .header {
     padding: 20px;
     button {
       font-size: 12px;
     }
   }
 
-  .block-product {
-    position: relative;
+  .product-header {
     background-color: #F9FAFE;
-    &__bg {
-      height: 700px;
-      background-size: cover;
-      background-image: url("./shared/styles/images/main-product.png");
+    min-height: 850px;
+    width: 100%;
+    background: url("./shared/styles/images/main-product.png") center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    &__ads {
+      margin-top: 50px;
       button {
         margin-top: 65px;
-      }
+      }      
     }
-    &__bg-footer {
-      height: 400px;
-      background-size: cover;
-      background-image: url("./shared/styles/images/product-footer.jpg");
+  }
+
+  .product-footer {
+    min-height: 850px;
+    width: 100%;
+    background-color: #F9FAFE;
+    background: url("./shared/styles/images/product-footer.jpg") center center no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    &__wrapper {
       h3:first-child {
         padding-top: 60px;
       }
       button {
         margin-top: 65px;
       }
-    }
-    &__ads {
-      margin-top: 50px;
     }
   }
 
@@ -77,7 +86,7 @@ $navbar-inverse-link-color: #5AADBB;
     }
     &__col {
       img {
-        width: 30%;
+        width: 35%;
         height: 135px;
       }
       p {
@@ -87,11 +96,14 @@ $navbar-inverse-link-color: #5AADBB;
   }
 
   .section-about {
+    width: 100%;
     background-color: #F9FAFE;
-    position: relative;
-    height: 685px;
-    background-size: cover;
-    background-image: url("./shared/styles/images/about.png");
+    min-height: 850px;
+    background: url("./shared/styles/images/about.png") center center no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
     h3, h4 {
       padding-left: 185px;
     }
